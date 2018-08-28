@@ -1445,7 +1445,7 @@ headerbar {
   min-height: 22px;
   border-width: 0 0 1px;
   border-style: solid;
-  border-color: $alt_borders_color;
+  border-color: $borders_color;
   border-radius: 0;
 
   @include headerbar_fill;
@@ -2657,11 +2657,11 @@ switch {
   }
 
   slider {
-    margin: -1px;
+    margin: 1px;
     min-width: 36px;
-    min-height: 20px;
+    min-height: 16px;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: $button_transition;
 
     @include button(normal-alt, $edge: $shadow_color);
