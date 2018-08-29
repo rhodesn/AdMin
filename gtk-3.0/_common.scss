@@ -260,7 +260,7 @@ spinner {
 %entry,
 entry {
   %entry_basic, & {
-    min-height: 32px;
+    min-height: 24px;
     padding-left: 8px;
     padding-right: 8px;
     border: 1px solid;
@@ -508,7 +508,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 16px;
+    min-height: 20px;
     min-width: 16px;
     padding: 2px;
     border: 1px solid;
@@ -1473,6 +1473,15 @@ headerbar {
     @extend .dim-label;
   }
 
+  button,
+  %headerbar_button {
+    min-height: 16px;
+
+    &.titlebutton {
+      @extend %headerbar_button;
+    }
+  }
+
   &.selection-mode {
     $_hc: mix($top_hilight,$selected_bg_color, 50%); // hilight color
 
@@ -1719,7 +1728,7 @@ headerbar { // headerbar border rounding
 
   > separator { background-color: $borders_color; }  // FIXME: use darker border?
 
-  @extend %titlebar;
+  //@extend %titlebar;
 }
 
 
@@ -3754,7 +3763,7 @@ messagedialog { // Message Dialog styling
     }
 
     .dialog-action-area button {
-      padding: 10px 14px; // labels are not vertically centered on message dialog, this is a workaround
+      padding: 10px; // labels are not vertically centered on message dialog, this is a workaround
       border-radius: 0;
       border-left-style: solid;
       border-right-style: none;
@@ -3763,12 +3772,12 @@ messagedialog { // Message Dialog styling
       &:first-child{
         border-left-style: none;
         border-bottom-left-radius: 2px;
-        -gtk-outline-bottom-left-radius: 5px;
+        -gtk-outline-bottom-left-radius: 2px;
       }
 
       &:last-child {
         border-bottom-right-radius: 2px;
-        -gtk-outline-bottom-right-radius: 5px;
+        -gtk-outline-bottom-right-radius: 2px;
       }
     }
   }
@@ -4365,7 +4374,7 @@ decoration {
 
 // Window Close button
 button.titlebutton {
-  @extend %button_basic;
+  //@extend %button_basic;
 
   //@extend %button_basic.flat;
 
