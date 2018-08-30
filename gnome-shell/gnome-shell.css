@@ -1,4 +1,20 @@
 stage {
     /*font-size: 9.75pt;*/
     font-size: 9pt;
+    font-family: "Ubuntu"
 }
+
+#panel .panel-button {
+    font-weight: normal;
+}
+
+#panel .panel-corner {
+   -panel-corner-radius: 2px;
+}
+
+.popup-menu-arrow {
+    width: 0px;
+    height: 0px;
+}
+
+.system-status-icon { icon-size: 11pt; padding: 0 5px; }
