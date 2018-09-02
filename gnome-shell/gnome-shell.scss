@@ -1,41 +1,5 @@
-stage {
-    /*font-size: 9.75pt;*/
-    font-size: 9pt;
-    font-family: "Ubuntu"
-}
+$variant: 'dark';
 
-#panel {
-    .panel-button {
-        font-weight: 500;
-    }
-    .panel-corner {
-        -panel-corner-radius: 2px;
-    }
-    .popup-menu-arrow {
-        width: 0px;
-        height: 0px;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .system-status-icon {
-        icon-size: 10pt;
-        padding: 0 6px;
-    }
-}
-
-.datemenu-today-button .day-label {
-    margin-bottom: 10px;
-}
-
-.datemenu-today-button .date-label {
-    font-weight: normal;
-}
-
-.calendar-day-base {
-    font-size: 9pt;
-
-    &.calendar-day-heading {
-        font-size: 9pt;
-    }
-}
+@import "gnome-shell-sass/_colors"; //use gtk colors
+@import "gnome-shell-sass/_drawing";
+@import "gnome-shell-sass/_common";
