@@ -1478,7 +1478,57 @@ headerbar {
     min-height: 16px;
 
     &.titlebutton {
-      @extend %headerbar_button;
+      //@extend %headerbar_button;
+      &.close,
+      &.maximize,
+      &.minimize,
+      &.restore {
+        box-shadow: none;
+        animation: none;
+        border: none;
+        color: transparent;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("windows-assets/titlebutton.png");
+
+        &:backdrop {
+          opacity: 0.5;
+        }
+      }
+
+      &.close {
+        &:hover {
+          background-image: url("windows-assets/titlebutton-close-hover.png");
+        }
+        &:active {
+          background-image: url("windows-assets/titlebutton-close-active.png");
+        }
+      }
+      &.maximize {
+        &:hover {
+          background-image: url("windows-assets/titlebutton-maximize-hover.png");
+        }
+        &:active {
+          background-image: url("windows-assets/titlebutton-maximize-active.png");
+        }
+      }
+      &.minimize {
+        &:hover {
+          background-image: url("windows-assets/titlebutton-minimize-hover.png");
+        }
+        &:active {
+          background-image: url("windows-assets/titlebutton-minimize-active.png");
+        }
+      }
+      &.restore {
+        &:hover {
+          background-image: url("windows-assets/titlebutton-restore-hover.png");
+        }
+        &:active {
+          background-image: url("windows-assets/titlebutton-restore-active.png");
+        }
+      }
     }
   }
 
