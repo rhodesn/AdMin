@@ -1475,6 +1475,7 @@ headerbar {
 
   button,
   %headerbar_button {
+    padding: 0;
     min-height: 16px;
 
     &.titlebutton {
@@ -1668,7 +1669,7 @@ headerbar {
 
   &.default-decoration {
     min-height: 18px;
-    padding: 2px;
+    padding: 2px 0;
 
     &:last-child {
       padding-right: 5px;
@@ -1676,7 +1677,7 @@ headerbar {
 
     button.titlebutton {
       min-height: 10px;
-      min-width: 20px;
+      min-width: 0px;
       margin: 0;
       padding: 0;
     }
