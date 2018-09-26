@@ -261,8 +261,8 @@ spinner {
 entry {
   %entry_basic, & {
     min-height: 24px;
-    padding-left: 8px;
-    padding-right: 8px;
+    min-width: 24px;
+    padding: 2px 7px;
     border: 1px solid;
     border-radius: 3px;
     transition: all 200ms $ease-out-quad;
@@ -508,11 +508,10 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 20px;
-    min-width: 16px;
+    min-height: 24px;
     padding: 2px;
     border: 1px solid;
-    border-radius: 2px;
+    border-radius: 3px;
     transition: $button_transition;
 
     @include button(normal);
@@ -601,8 +600,15 @@ button {
     }
 
     &.combo,
+    &.font,
     &.file {
-      min-height: 20px;
+      padding-left: 7px;
+      padding-right: 7px;
+      @include button(normal-alt);
+
+      &:hover {
+        @include button(hover-alt);
+      }
     }
   }
 
@@ -819,7 +825,7 @@ button {
 
   // inline-toolbar buttons
   .inline-toolbar &, .inline-toolbar &:backdrop {
-    border-radius: 2px;
+    border-radius: 3px;
     border-width: 1px;
     @extend %linked;
   }
@@ -989,7 +995,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   }
 
   &:only-child {
-    border-radius: 2px;
+    border-radius: 3px;
     border-style: solid;
   }
 }
@@ -1476,7 +1482,7 @@ headerbar {
   button,
   %headerbar_button {
     padding: 0;
-    min-height: 16px;
+    min-height: 24px;
 
     &.titlebutton {
       //@extend %headerbar_button;
