@@ -20,4 +20,5 @@ $ cd ~/.themes/AdMin/gtk-3.0 && ./parse-sass.sh
 
 You will need the `sassc` package installed to compile the css.
 
-**NOTE**: this has only been tested using `gtk3-3.22.30`.
+**NOTE**: this has only been tested using `gtk3-3.22.30` and gnome-shell
+`gnome-shell-3.28`.
