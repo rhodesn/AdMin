@@ -22,3 +22,5 @@ You will need the `sassc` package installed to compile the css.
 
 **NOTE**: this has only been tested using `gtk3-3.22.30` and gnome-shell
 `gnome-shell-3.28`.
+
+Release v0.01 for version 3.28 of gnome-shell.
