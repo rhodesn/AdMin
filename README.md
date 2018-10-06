@@ -10,7 +10,7 @@ Tweaks include:
 
 
 ### Installation
-Clone the repo to `~/.themes` and run the `parse-sass.sh` script to generate the
+Clone the repo to `~/.themes` and run `parse-sass.sh` script to generate the
 `gtk.css` files.
 
 ```sh
