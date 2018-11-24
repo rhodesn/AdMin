@@ -5,7 +5,7 @@ if [ ! "$(command -v sassc &>/dev/null)" ]; then
    exit 1
 fi
 
-SASSC_OPT=("-l" "-M" "-t" "e xpanded")
+SASSC_OPT=("-l" "-M" "-t" "expanded")
 
 echo Generating the css...
 
