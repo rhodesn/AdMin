@@ -508,8 +508,9 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 24px;
-    padding: 2px;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 5px;
     border: 1px solid;
     border-radius: 3px;
     transition: $button_transition;
@@ -573,9 +574,9 @@ button {
     }
 
     &.image-button {
-      min-width: 24px;
-      padding-left: 2px;
-      padding-right: 2px;
+      //min-width: 24px;
+      //padding-left: 2px;
+      //padding-right: 2px;
     }
 
     &.text-button {
@@ -712,7 +713,7 @@ button {
   @each $b_type, $b_color in (suggested-action, $selected_bg_color),
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
-      @include button(normal, $b_color, white);
+      @include button(normal, $b_color, transparentize(white, 0.3));
 
       &.flat {
         @include button(undecorated);
@@ -720,7 +721,10 @@ button {
         color: $b_color; //FIXME: does it work on the dark variant?
       }
 
-      &:hover { @include button(hover, $b_color, white); }
+      &:hover {
+        @include button(hover, $b_color, white);
+        color: white;
+      }
 
       &:active,
       &:checked { @include button(active, $b_color, white); }
@@ -848,29 +852,29 @@ button {
     border-radius: 9999px;
     -gtk-outline-radius: 9999px;
 
-    label { padding: 0; }
+    //label { padding: 0; }
 
     // the followind code is needed since we use a darker bottom border on buttons, which looks pretty
     // bad with a 100% border radius (see https://bugzilla.gnome.org/show_bug.cgi?id=771205 for details),
     // so on relevant states we an additional background-image with a gradient clipped on the border-box,
     // so setting a transparent border would reveal it.
     // FIXME: take care of colored circular button.
-    $_border_bg: linear-gradient(to top, $alt-borders-color 25%, $borders-color 50%);
+    //$_border_bg: linear-gradient(to top, $alt_borders_color 25%, $borders_color 50%);
 
-    &:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-      @include button(normal);
-      background-image: $button_fill, $_border_bg;
-      border-color: transparent;
-    }
+    //&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+      //@include button(normal);
+      //background-image: $button_fill, $_border_bg;
+      //border-color: transparent;
+    //}
 
-    &:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
-      @include button(hover);
-      background-image: $button_fill, $_border_bg;
-      border-color: transparent;
-    }
+    //&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
+      //@include button(hover);
+      //background-image: $button_fill, $_border_bg;
+      //border-color: transparent;
+    //}
 
-    background-origin: padding-box, border-box;
-    background-clip: padding-box, border-box;
+    //background-origin: padding-box, border-box;
+    //background-clip: padding-box, border-box;
   }
 }
 
@@ -2185,7 +2189,7 @@ menuitem {
 
 popover.background {
   padding: 2px;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: $popover_bg_color;
 
   .csd &, & { border: 1px solid $borders_color; }
@@ -2682,7 +2686,7 @@ switch {
 
   // similar to the .scale
   border: 1px solid $borders_color;
-  border-radius: 3px;
+  border-radius: 2px;
   color: $fg_color;
   background-color: $dark_fill;
   text-shadow: 0 1px transparentize(black, 0.9);
@@ -2833,9 +2837,9 @@ radio {
   border: 1px solid;
   -gtk-icon-source: none;
 
-  @include button(normal-alt, $edge: $shadow_color);
+  @include button(normal, $edge: $shadow_color);
 
-  &:hover { @include button(hover-alt, $edge: $shadow_color); }
+  &:hover { @include button(hover, $edge: $shadow_color); }
   &:active { @include button(active); }
   &:disabled { @include button(insensitive); }
   &:backdrop {
@@ -2879,7 +2883,7 @@ radio {
 
 %check,
 check {
-  border-radius: 3px;
+  border-radius: 2px;
 
   &:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")),
                                       -gtk-recolor(url("assets/check-symbolic.symbolic.png"))); }
