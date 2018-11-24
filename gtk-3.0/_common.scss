@@ -1481,8 +1481,9 @@ headerbar {
 
   button,
   %headerbar_button {
-    padding: 0;
+    padding: 2px;
     min-height: 24px;
+    min-width: 24px;
 
     &.titlebutton {
       //@extend %headerbar_button;
