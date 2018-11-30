@@ -3063,6 +3063,17 @@ scale {
     -gtk-outline-radius: 5px;
   }
 
+  &.horizontal {
+    trough {
+      min-height: 5px;
+    }
+  }
+
+  &.vertical {
+    trough {
+      min-width: 5px;
+    }
+  }
   // the colored part of the backing bit
   highlight { @extend %scale_highlight; }
 
@@ -3182,7 +3193,7 @@ scale {
   &.horizontal {
     indicator {
       min-height: $_marks_length;
-      min-width: 1px;
+      min-width: 5px;
     }
 
     &.fine-tune indicator { min-height: ($_marks_length - 3px); }
@@ -3190,7 +3201,7 @@ scale {
 
   &.vertical {
     indicator {
-      min-height: 1px;
+      min-height: 5px;
       min-width: $_marks_length;
     }
 
@@ -3410,12 +3421,12 @@ progressbar {
   // sizing
   &.horizontal {
     trough,
-    progress { min-height: 2px; }
+    progress { min-height: 5px; }
   }
 
   &.vertical {
     trough,
-    progress { min-width: 2px; }
+    progress { min-width: 5px; }
   }
 
   &.horizontal progress { margin: 0 -1px; } // the progress node is positioned after the trough border
@@ -3464,8 +3475,8 @@ progressbar {
   &:backdrop progress { @extend %scale_highlight:backdrop; } // states not passed here as well
 
   &.osd { // progressbar.osd used for epiphany page loading progress
-    min-width: 3px;
-    min-height: 3px;
+    min-width: 5px;
+    min-height: 5px;
     background-color: transparent;
 
     trough {
@@ -3491,7 +3502,7 @@ progressbar {
 levelbar {
   &.horizontal {
     block {
-      min-height: 1px;
+      min-height: 5px;
     }
 
     &.discrete block {
@@ -3502,7 +3513,7 @@ levelbar {
 
   &.vertical {
     block {
-      min-width: 1px;
+      min-width: 5px;
     }
 
     &.discrete block {
