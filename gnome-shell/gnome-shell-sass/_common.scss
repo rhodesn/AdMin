@@ -733,7 +733,7 @@ app menu inside the main app window itself rather than the top bar
     /* transition from solid to transparent */
     transition-duration: 500ms;
     font-weight: 500;
-    height: 2em;
+    height: 1.9em;
 
     &.unlock-screen,
     &.login-screen,
@@ -805,7 +805,7 @@ app menu inside the main app window itself rather than the top bar
         }
 
         .system-status-icon {
-            icon-size: 16px;
+            icon-size: 14px;
             padding: 0 5px;
         }
         .unlock-screen &,
