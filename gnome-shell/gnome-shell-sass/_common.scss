@@ -28,7 +28,7 @@ $corner-radius: $panel-corner-radius;
 
 
 /* GLOBALS */
-$font-size: 9;
+$font-size: 10;
 $font-family: "Ubuntu", Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
@@ -733,7 +733,7 @@ app menu inside the main app window itself rather than the top bar
     /* transition from solid to transparent */
     transition-duration: 500ms;
     font-weight: 500;
-    height: 1.86em;
+    height: 1.8em;
 
     &.unlock-screen,
     &.login-screen,
@@ -805,7 +805,7 @@ app menu inside the main app window itself rather than the top bar
         }
 
         .system-status-icon {
-            icon-size: 10pt;
+            icon-size: 16px;
             padding: 0 5px;
         }
         .unlock-screen &,
