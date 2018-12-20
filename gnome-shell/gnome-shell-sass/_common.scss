@@ -28,7 +28,7 @@ $corner-radius: $panel-corner-radius;
 
 
 /* GLOBALS */
-$font-size: 10;
+$font-size: 9;
 $font-family: "Ubuntu", Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
@@ -733,7 +733,7 @@ app menu inside the main app window itself rather than the top bar
     /* transition from solid to transparent */
     transition-duration: 500ms;
     font-weight: 500;
-    height: 1.8em;
+    height: 2em;
 
     &.unlock-screen,
     &.login-screen,
@@ -1174,7 +1174,7 @@ app menu inside the main app window itself rather than the top bar
     padding: 0px;
     margin: 0px;
 }
-.popup-menu-icon { icon-size: 1.09em; }
+.popup-menu-icon { icon-size: 16px; }
 
 //close buttons
 
@@ -1544,7 +1544,7 @@ app menu inside the main app window itself rather than the top bar
 
     .notification-icon { padding: 5px; }
     .notification-content { padding: 5px; spacing: 5px; }
-    .secondary-icon { icon-size: 1.09em; }
+    .secondary-icon { icon-size: 16px; }
     .notification-actions {
         background-color: $borders_color;
         padding-top: 2px;
@@ -1571,7 +1571,7 @@ app menu inside the main app window itself rather than the top bar
     border-radius: 0.9em; // should be 0.8 but whatever; wish I could do 50%;
 }
 
-.secondary-icon { icon-size: 1.09em; }
+.secondary-icon { icon-size: 16px; }
 
 //chat bubbles
 .chat-body { spacing: 5px; }
