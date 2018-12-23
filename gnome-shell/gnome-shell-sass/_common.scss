@@ -4,7 +4,7 @@
 $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
 
-$panel-corner-radius: 0px;
+$panel-corner-radius: 6px;
 $corner-radius: $panel-corner-radius;
 
 /* Copyright 2009, 2015 Red Hat, Inc.
@@ -732,7 +732,7 @@ app menu inside the main app window itself rather than the top bar
     background-color: rgba(0, 0, 0, 0.35);
     /* transition from solid to transparent */
     transition-duration: 500ms;
-    font-weight: 500;
+    font-weight: 600;
     height: 1.9em;
 
     &.unlock-screen,
@@ -805,7 +805,7 @@ app menu inside the main app window itself rather than the top bar
         }
 
         .system-status-icon {
-            icon-size: 14px;
+            icon-size: 15px;
             padding: 0 5px;
         }
         .unlock-screen &,
