@@ -6,9 +6,9 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', '');
 $backdrop_transition: 200ms ease-out;
 $button_transition: all 200ms $ease-out-quad;
-$button_radius: 5px;
-$menu_radius: 5px;
-$window_radius: $button_radius + 3;
+$button_radius: 3px;
+$menu_radius: 3px;
+$window_radius: $button_radius;
 
 * {
   padding: 0;
@@ -38,7 +38,7 @@ $window_radius: $button_radius + 3;
   outline-style: dashed;
   outline-offset: -3px;
   outline-width: 1px;
-  -gtk-outline-radius: $button-radius - 2;
+  -gtk-outline-radius: $button-radius;
 
   -gtk-secondary-caret-color: $selected_bg_color
 }
@@ -263,9 +263,8 @@ spinner {
 %entry,
 entry {
   %entry_basic, & {
-    min-height: 32px;
-    padding-left: 8px;
-    padding-right: 8px;
+    min-height: 18px;
+    padding: 5px;
     border: 1px solid;
     border-radius: $button_radius;
     transition: all 200ms $ease-out-quad;
@@ -521,9 +520,9 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 24px;
-    min-width: 16px;
-    padding: 4px 9px;
+    min-height: 18px;
+    min-width: 18px;
+    padding: 5px;
     border: 1px solid;
     border-radius: $button_radius;
     transition: $button_transition;
@@ -586,10 +585,14 @@ button {
       &:checked { @include button(insensitive-active); }
     }
 
-    &.image-button {
-      min-width: 24px;
-      padding-left: 5px;
-      padding-right: 5px;
+    //&.image-button {
+      //min-width: 24px;
+      //padding-left: 5px;
+      //padding-right: 5px;
+    //}
+
+    &.combo {
+        padding: 4px 5px 5px 5px;
     }
 
     &.text-button {
@@ -630,10 +633,10 @@ button {
 
   // big standalone buttons like in Documents pager
   &.osd {
-    min-width: 26px;
+    min-width: 24px;
     min-height: 32px;
 
-    &.image-button { min-width: 34px; }
+    &.image-button { min-width: 32px; }
 
     color: $osd_fg_color;
     border-radius: 5px;
@@ -800,8 +803,8 @@ button {
     &.image-button {
       // we want image buttons to have a 1:1 aspect ratio, so compensation
       // of the padding added to the GtkImage is needed
-      padding-left: 2px;
-      padding-right: 2px;
+      padding-left: 4px;
+      padding-right: 4px;
     }
 
     &.needs-attention {
@@ -1506,7 +1509,7 @@ searchbar > revealer > box {
 %titlebar,
 headerbar {
   padding: 0 6px;
-  min-height: 46px;
+  min-height: 34px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: $alt_borders_color;
@@ -1726,8 +1729,8 @@ headerbar {
   spinbutton,
   separator:not(.sidebar),
   button {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
   switch {
     margin-top: 10px;
@@ -2085,7 +2088,7 @@ treeview.view {
 }
 
 %column_header_button {
-  padding: 0 6px;
+  padding: 4px 6px;
   background-image: none;
   border-style: none solid solid none;
   border-color: $bg_color;
@@ -2450,7 +2453,7 @@ notebook {
     }
 
     tab {
-      min-height: 30px;
+      min-height: 24px;
       min-width: 30px;
       padding: 3px 12px;
 
@@ -2810,8 +2813,8 @@ switch {
 
   slider {
     margin: -1px;
-    min-width: 24px;
-    min-height: 24px;
+    min-width: 19px;
+    min-height: 19px;
     border: 1px solid;
     border-radius: 50%;
     transition: $button_transition;
