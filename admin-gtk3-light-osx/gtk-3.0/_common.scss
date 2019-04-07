@@ -508,8 +508,8 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 16px;
-    min-width: 16px;
+    min-height: 18px;
+    min-width: 18px;
     padding: 5px;
     border: 1px solid;
     border-radius: 3px;
@@ -1451,8 +1451,8 @@ searchbar,
  ***************/
 %titlebar,
 headerbar {
-  padding: 4px 5px;
-  min-height: 22px;
+  padding: 4px 6px;
+  min-height: 28px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: $borders_color;
@@ -1485,12 +1485,12 @@ headerbar {
 
   button,
   %headerbar_button {
-    padding: 2px;
-    min-height: 24px;
-    min-width: 24px;
 
     &.titlebutton {
       //@extend %headerbar_button;
+      min-height: 16px;
+      min-width: 16px;
+      padding: 2px;
       &.close,
       &.maximize,
       &.minimize,
@@ -1683,18 +1683,18 @@ headerbar {
   }
 
   &.default-decoration {
-    min-height: 20px;
-    padding: 2px 0 1px 0;
+    min-height: 28px;
+    padding: 4px 6px;
 
     &:last-child {
       padding-right: 5px;
     }
 
     button.titlebutton {
-      min-height: 24px;
-      min-width: 24px;
+      min-height: 16px;
+      min-width: 16px;
       margin: 0;
-      padding: 0 2px;
+      padding: 2px;
     }
   }
 
