@@ -10,6 +10,6 @@ SASSC_OPT=("-l" "-M" "-t" "expanded")
 echo Generating the css...
 
 sassc "${SASSC_OPT[@]}" gtk-contained.scss gtk-contained.css
-sassc "${SASSC_OPT[@]}" gtk-contained-dark.scss gtk-contained-dark.css
+#sassc "${SASSC_OPT[@]}" gtk-contained-dark.scss gtk-contained-dark.css
 
-ln -sf "gtk-${1:-light}.css" gtk.css
+ln -sf "gtk-contained.css" gtk.css

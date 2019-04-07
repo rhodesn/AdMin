@@ -1,20 +1,8 @@
 .nautilus-window {
-    .path-bar button {
-        background-image: none;
-        border-radius: 0;
-        border-width: 0px;
-        margin: 0px;
-        &:backdrop {
-            background-image: none;
-        }
-    }
-
-    .path-bar button:not(:checked) image {
-        opacity: 0.8;
-    }
-
-    .path-bar button:not(:backdrop):hover {
-        box-shadow: inset 0 -3px if($variant=='light', rgb(182,182,179), rgb(27,31,32));
+    .nautilus-path-bar button {
+        border-width: 0;
+        border-right-style: solid;
+        border-right-width: 1px;
     }
 
     .path-bar-box {
@@ -27,7 +15,7 @@
 
     .path-bar-box {
         border: 1px solid $nautilus_border_color;
-        border-radius: 3px;
+        border-radius: 2px;
         &:not(:backdrop) {
             background-color: $nautilus_background_color;
         }
