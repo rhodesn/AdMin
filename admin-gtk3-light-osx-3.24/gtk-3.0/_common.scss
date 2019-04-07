@@ -1555,9 +1555,9 @@ assistant {
         button {
 
             &.titlebutton {
-                padding: 2px;
                 min-height: 16px;
                 min-width: 16px;
+                padding: 2px;
                 //@extend %headerbar_button;
                 &.close,
                 &.maximize,
@@ -1761,13 +1761,13 @@ assistant {
 
         &.default-decoration {
             min-height: 28px;
-            padding: 4px;
+            padding: 4px 6px;
 
             button.titlebutton {
-                min-height: 26px;
-                min-width: 26px;
+                min-height: 16px;
+                min-width: 16px;
                 margin: 0;
-                padding: 0;
+                padding: 2px;
             }
         }
 
