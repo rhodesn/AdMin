@@ -2,25 +2,21 @@
 Another minimal Adwaita GTK3 theme.
 
 Tweaks include:
-- Reducing titlebar padding
-- Reducing button, entry, input, and slider padding
-- Reducing border-radius to 2px in as many places as possible
+- Reduce titlebar padding
+- Reduce button, entry, input, and slider padding
+- Reduce border-radius to 3px in as many places as possible
 
 ![AdMin Widgets Image](img/AdMin-widgets.png "AdMin Widgets")
 
 
 ### Installation
-Clone the repo to `~/.themes` and run `parse-sass.sh` script to generate the
+Clone the repo to `~/Downloads` and run `parse-sass.sh` script to generate the
 `gtk.css` files.
 
 ```sh
-$ git clone https://github.com/nrhodes91/AdMin ~/.themes/AdMin
-$ cd ~/.themes/AdMin/gtk-3.0 && ./parse-sass.sh
+$ git clone https://github.com/nrhodes91/AdMin ~/Downloads/AdMin
+$ for theme in ~/Downloads/AdMin/admin-gtk*; do ln -sf $theme ~/.themes/$theme
+$ for theme in ~/.themes/admin-gtk*; do pushd $theme/gtk-3.0/; ./parse-sass.sh; popd; done
 ```
 
-You will need the `sassc` package installed to compile the css.
-
-**NOTE**: this has only been tested using `gtk3-3.22.30` and gnome-shell
-`gnome-shell-3.28`.
-
-Release v0.01 for version 3.28 of gnome-shell.
+You need the `sassc` package installed to compile the css.
