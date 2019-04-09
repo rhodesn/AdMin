@@ -1,0 +1,6 @@
+// Window Close button
+button.titlebutton {
+    @extend %button_basic;
+
+    @extend %button_basic.flat;
+}
