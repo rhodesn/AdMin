@@ -11,13 +11,20 @@
     .path-bar-box {
         transition: border 200ms;
         transition: background-color 200ms;
-    }
 
-    .path-bar-box {
         border: 1px solid $borders_color;
-        border-radius: 2px;
+        border-radius: $button_radius;
         &:not(:backdrop) {
             background-color: $bg_color;
+        }
+
+        button {
+            &:first-child {
+                border-radius: $button_radius 0px 0px $button_radius;
+            }
+            &:last-child {
+                border-radius: 0px $button_radius $button_radius 0px;
+            }
         }
     }
 }
