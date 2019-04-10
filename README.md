@@ -10,8 +10,8 @@ Tweaks include:
 
 
 ### Installation
-Clone the repo to `~/Downloads` and run `parse-sass.sh` script to generate the
-`gtk.css` files.
+Clone the repo to `~/.themes`, link the sub-themes, and run `parse-sass.sh`
+script to generate the `gtk.css` files.
 
 ```sh
 $ git clone https://github.com/nrhodes91/AdMin ~/.themes/AdMin
