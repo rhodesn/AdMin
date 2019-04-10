@@ -18,13 +18,13 @@
             background-color: $bg_color;
         }
 
-        button {
-            &:first-child {
-                border-radius: $button_radius 0px 0px $button_radius;
-            }
-            &:last-child {
-                border-radius: 0px $button_radius $button_radius 0px;
-            }
-        }
+        //button {
+            //&:first-child {
+                //border-radius: $button_radius 0px 0px $button_radius;
+            //}
+            //&:last-child {
+                //border-radius: 0px $button_radius $button_radius 0px;
+            //}
+        //}
     }
 }
