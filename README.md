@@ -14,9 +14,9 @@ Clone the repo to `~/Downloads` and run `parse-sass.sh` script to generate the
 `gtk.css` files.
 
 ```sh
-$ git clone https://github.com/nrhodes91/AdMin ~/Downloads/AdMin
-$ for theme in ~/Downloads/AdMin/admin-gtk*; do ln -sf $theme ~/.themes/$theme
-$ for theme in ~/.themes/admin-gtk*; do pushd $theme/gtk-3.0/; ./parse-sass.sh; popd; done
+$ git clone https://github.com/nrhodes91/AdMin ~/.themes/AdMin
+$ for theme in ~/.themes/AdMin/admin-gtk*; do ln -sf $theme ~/.themes/$theme
+$ find ~/.themes/AdMin -type f -name parse-sass.sh -execdir {} \;
 ```
 
 You need the `sassc` package installed to compile the css.
