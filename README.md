@@ -15,7 +15,7 @@ script to generate the `gtk.css` files.
 
 ```sh
 $ git clone https://github.com/nrhodes91/AdMin ~/.themes/AdMin
-$ for theme in ~/.themes/AdMin/admin-gtk*; do ln -sf $theme ~/.themes/$theme
+$ for theme in ~/.themes/AdMin/admin-gtk*; do ln -sf $theme; done
 $ find ~/.themes/AdMin -type f -name parse-sass.sh -execdir {} \;
 ```
 
