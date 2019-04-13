@@ -1,0 +1,51 @@
+stage {
+    font-family: "Ubuntu";
+    font-size: 9pt;
+}
+#panel {
+    font-weight: 500;
+    height: 2em;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    .panel-button {
+        font-weight: 500;
+    }
+    .panel-corner {
+        -panel-corner-radius: 0;
+        -panel-corner-background-color: transparent;
+        -panel-corner-border-color: transparent;
+    }
+
+    .panel-button {
+        .system-status-icon {
+            icon-size: 15px;
+        }
+
+    }
+}
+.calendar-day-base {
+    font-size: 9pt;
+    &.calendar-day-heading {
+        font-size: 9pt;
+    }
+}
+
+
+//.popup-menu-boxpointer,
+//.candidate-popup-boxpointer {
+//-arrow-border-radius: 6px;
+//-arrow-background-color: rgba(63, 62, 64, 0.98);
+//-arrow-border-width: 0;
+//-arrow-border-color: transparent;
+//-arrow-base: 0;
+//-arrow-rise: 0;
+//-arrow-box-shadow: none;
+//margin: 0.3em 0.8em;
+//background-color: transparent;
+//box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+//border-radius: 6px;
+//}
