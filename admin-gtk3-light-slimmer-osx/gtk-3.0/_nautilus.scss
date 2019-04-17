@@ -1,0 +1,30 @@
+/* Path bar */
+
+.nautilus-window {
+    .nautilus-path-bar button {
+        margin: 0;
+        border-width: 0;
+        border-right-style: solid;
+        border-right-width: 1px;
+    }
+
+    .path-bar-box {
+        transition: border 200ms;
+        transition: background-color 200ms;
+
+        border: 1px solid $borders_color;
+        border-radius: $button_radius;
+        &:not(:backdrop) {
+            background-color: $bg_color;
+        }
+
+        //button {
+            //&:first-child {
+                //border-radius: $button_radius 0px 0px $button_radius;
+            //}
+            //&:last-child {
+                //border-radius: 0px $button_radius $button_radius 0px;
+            //}
+        //}
+    }
+}
