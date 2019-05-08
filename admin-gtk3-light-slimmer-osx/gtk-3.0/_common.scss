@@ -254,8 +254,8 @@ spinner {
 entry {
     %entry_basic,
     & {
-        min-height: 16px;
-        padding: 5px;
+        min-height: 20px;
+        padding: 2px 5px;
         border: 1px solid;
         border-radius: $button_radius;
         transition: all 200ms $ease-out-quad;
@@ -517,9 +517,9 @@ $_dot_color: if($variant=='light', $selected_bg_color, lighten($selected_bg_colo
 button {
     @at-root %button_basic,
     & {
-        min-height: 16px;
+        min-height: 20px;
         min-width: 16px;
-        padding: 0.35em 7px;
+        padding: 2px 7px;
         border: 1px solid;
         border-radius: $button_radius;
         transition: $button_transition;
@@ -586,9 +586,6 @@ button {
         //padding-left: 5px;
         //padding-right: 5px;
         //}
-        &.combo {
-            padding: 4px 5px 5px 5px;
-        }
         &.text-button {
             padding-left: 16px;
             padding-right: 16px;
