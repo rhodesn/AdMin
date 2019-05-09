@@ -1740,8 +1740,8 @@ headerbar {
         min-width: 0;
     }
     switch {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     &.titlebar headerbar:not(.titlebar) {
         // Drop the background of non-titlebar nested headerbars. This is needed to
