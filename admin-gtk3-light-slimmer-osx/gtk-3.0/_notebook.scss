@@ -1,0 +1,28 @@
+notebook {
+    >header {
+        tab {
+            min-height: 16px;
+            padding: 0 12px;
+        }
+        &.top,
+        &.bottom {
+            tabs {
+                tab {
+                    margin: 0;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+        &.left,
+        &.right {
+            tabs {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                tab {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
