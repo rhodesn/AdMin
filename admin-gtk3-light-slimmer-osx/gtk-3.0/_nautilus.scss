@@ -1,6 +1,9 @@
 /* Path bar */
 
 .nautilus-window {
+    .path-bar-box {
+        margin: 3px 0 2px 0;
+    }
     .nautilus-path-bar button {
         margin: 0;
         border-width: 0;

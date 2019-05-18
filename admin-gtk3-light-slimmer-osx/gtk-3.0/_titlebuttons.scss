@@ -1,10 +1,17 @@
 %titlebar,
 headerbar {
+    entry,
+    spinbutton,
+    separator:not(.sidebar),
+    button {
+        margin: 3px 0 2px 0;
+    }
+
     button {
         &.titlebutton {
             min-height: 16px;
             min-width: 16px;
-            padding: 2px;
+            padding: 0;
             //@extend %headerbar_button;
             &.close,
             &.maximize,
@@ -63,12 +70,13 @@ headerbar {
     }
 
     &.default-decoration {
-        padding: 0px 6px;
+        min-height: 0;
+        padding: 4px 6px 3px 6px;
 
         button.titlebutton {
             min-height: 16px;
             min-width: 16px;
-            padding: 2px;
+            padding: 0;
         }
     }
 }
