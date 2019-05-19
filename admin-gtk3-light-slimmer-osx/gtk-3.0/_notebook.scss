@@ -1,8 +1,9 @@
 notebook {
     >header {
         tab {
-            min-height: 16px;
+            min-height: 28px;
             padding: 0 12px;
+            outline-style: none;
         }
         &.top,
         &.bottom {
