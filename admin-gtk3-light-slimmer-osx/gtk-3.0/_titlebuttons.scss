@@ -1,5 +1,13 @@
 %titlebar,
 headerbar {
+    label {
+        margin-top: 1px;
+    }
+
+    .title {
+        font-weight: 500;
+    }
+
     entry,
     spinbutton,
     button {
