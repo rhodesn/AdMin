@@ -15,8 +15,8 @@ stage {
         font-weight: 500;
     }
     .panel-corner {
-        -panel-corner-radius: 3;
-        -panel-corner-background-color: rgba(0,0,0,0.3);
+        -panel-corner-radius: 0;
+        -panel-corner-background-color: transparent;
         -panel-corner-border-color: transparent;
     }
 
