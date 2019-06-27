@@ -1,0 +1,88 @@
+%titlebar,
+headerbar {
+    label {
+        margin-top: 1px;
+    }
+
+    .title {
+        font-weight: 500;
+    }
+
+    entry,
+    spinbutton,
+    button {
+        margin: 3px 0 2px 0;
+    }
+
+    button {
+        &.titlebutton {
+            min-height: 16px;
+            min-width: 16px;
+            padding: 0;
+            margin-top: 1px;
+            //@extend %headerbar_button;
+            &.close,
+            &.maximize,
+            &.minimize,
+            &.restore {
+                box-shadow: none;
+                animation: none;
+                border: none;
+                color: transparent;
+                background-color: transparent;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("windows-assets/titlebutton.png");
+
+                &:backdrop {
+                    opacity: 0.5;
+                }
+            }
+
+            &.close {
+                &:hover {
+                    background-image: url("windows-assets/titlebutton-close-hover.png");
+                }
+                &:active {
+                    background-image: url("windows-assets/titlebutton-close-active.png");
+                }
+            }
+            &.maximize {
+                &:hover {
+                    background-image: url("windows-assets/titlebutton-maximize-hover.png");
+                }
+                &:active {
+                    background-image: url("windows-assets/titlebutton-maximize-active.png");
+                }
+            }
+            &.minimize {
+                &:hover {
+                    background-image: url("windows-assets/titlebutton-minimize-hover.png");
+                }
+                &:active {
+                    background-image: url("windows-assets/titlebutton-minimize-active.png");
+                }
+            }
+            &.restore {
+                &:hover {
+                    background-image: url("windows-assets/titlebutton-restore-hover.png");
+                }
+                &:active {
+                    background-image: url("windows-assets/titlebutton-restore-active.png");
+                }
+            }
+        }
+    }
+
+    &.default-decoration {
+        min-height: 0;
+        padding: 4px 6px 3px 6px;
+
+        button.titlebutton {
+            min-height: 16px;
+            min-width: 16px;
+            padding: 0;
+            margin-top: 1px;
+        }
+    }
+}
