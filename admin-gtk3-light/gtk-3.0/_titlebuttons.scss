@@ -4,3 +4,7 @@ button.titlebutton {
 
     @extend %button_basic.flat;
 }
+switch slider {
+    min-height: 15px;
+    min-width: 15px;
+}
