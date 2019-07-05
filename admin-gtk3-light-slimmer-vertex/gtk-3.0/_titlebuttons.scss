@@ -76,13 +76,12 @@ headerbar {
 
     &.default-decoration {
         min-height: 0;
-        padding: 4px 6px 3px 6px;
+        padding: 4px 6px;
 
         button.titlebutton {
             min-height: 16px;
             min-width: 16px;
             padding: 0;
-            margin-top: 1px;
         }
     }
 }
