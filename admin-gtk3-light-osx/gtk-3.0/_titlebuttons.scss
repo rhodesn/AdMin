@@ -4,7 +4,7 @@ headerbar {
         &.titlebutton {
             min-height: 16px;
             min-width: 16px;
-            padding: 2px;
+            padding: 2px 0;
             //@extend %headerbar_button;
             &.close,
             &.maximize,
@@ -68,7 +68,7 @@ headerbar {
         button.titlebutton {
             min-height: 16px;
             min-width: 16px;
-            padding: 2px;
+            padding: 2px 0;
         }
     }
 }
