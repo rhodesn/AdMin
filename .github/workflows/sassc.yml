@@ -1,4 +1,4 @@
-name: CI
+name: Compile SASS to CSS
 
 on: [push]
 
