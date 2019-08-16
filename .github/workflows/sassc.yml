@@ -5,11 +5,11 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: fedora-latest
     
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies
-      run: apt update && apt install -y sassc
+      run: sudo dnf install -y sassc
     - name: Run a multi-line script
       run: echo testing
