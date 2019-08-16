@@ -4,12 +4,10 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: fedora-latest
-    
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Install dependencies
-      run: sudo dnf install -y sassc
-    - name: Run a multi-line script
+      run: sudo apt update && sudo apt install -y sassc
+    - name: Test sass to css compilation
       run: echo testing
