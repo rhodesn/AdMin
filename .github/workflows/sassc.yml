@@ -10,4 +10,6 @@ jobs:
     - name: Install dependencies
       run: sudo apt update && sudo apt install -y sassc
     - name: Test sass to css compilation
-      run: echo testing
+      run: |
+        pwd
+        ls
