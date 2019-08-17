@@ -5,7 +5,7 @@ if ! command -v sassc &>/dev/null; then
    exit 1
 fi
 
-SASSC_OPT=("-l" "-M" "-t" "expanded")
+SASSC_OPT=('-t' 'compressed')
 
 echo Generating the css...
 
