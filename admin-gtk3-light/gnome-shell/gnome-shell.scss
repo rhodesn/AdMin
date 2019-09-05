@@ -4,10 +4,9 @@ stage {
 }
 #panel {
     font-weight: 500;
-    height: 23px;
+    height: 25px;
     background-color: rgba(0,0,0,0.3);
     //margin-top: 5px;
-    margin-bottom: 1px;
     //margin-right: 5px;
     //margin-left: 5px;
     //border-radius: 3px;
@@ -22,7 +21,7 @@ stage {
 
     .panel-button {
         .system-status-icon {
-            icon-size: 15px;
+            icon-size: 16px;
         }
     }
 }
