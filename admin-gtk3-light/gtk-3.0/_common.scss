@@ -1534,14 +1534,13 @@ searchbar>revealer>box {
 headerbar {
     padding: 0 6px;
     min-height: 34px;
-    border-width: 1px 0 1px;
+    border-width: 0 0 1px;
     border-style: solid;
-    border-top-color: transparent;
     border-bottom-color: $alt_borders_color;
     border-radius: 0;
     @include headerbar_fill(darken($bg_color, 10%));
     &:backdrop {
-        border-color: $backdrop_borders_color;
+        border-bottom-color: $backdrop_borders_color;
         background-color: $bg_color;
         background-image: none;
         box-shadow: none;
