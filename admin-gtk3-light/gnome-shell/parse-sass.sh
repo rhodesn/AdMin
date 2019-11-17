@@ -5,8 +5,6 @@ if ! command -v sassc &>/dev/null; then
    exit 1
 fi
 
-SASSC_OPT=('-t' 'compressed')
-
 echo Generating the css...
 
-sassc "${SASSC_OPT[@]}" gnome-shell.scss gnome-shell.css
+sassc $@ gnome-shell.scss gnome-shell.css
