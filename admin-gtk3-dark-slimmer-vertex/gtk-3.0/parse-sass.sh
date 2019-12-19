@@ -5,6 +5,8 @@ if ! command -v sassc &>/dev/null; then
    exit 1
 fi
 
+#SASSC_OPT=('-t' 'compressed')
+SASSC_OPT=('-t' 'compact')
 echo Generating the css...
 
-sassc $@ gtk-contained.scss gtk.css
+sassc "${SASSC_OPT[@]}" gtk-contained.scss gtk.css
