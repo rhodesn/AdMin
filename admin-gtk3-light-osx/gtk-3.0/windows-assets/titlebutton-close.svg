@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
 <g id="surface1">
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,37.64706%,36.078432%);fill-opacity:1;" d="M 7 14 C 10.867188 14 14 10.867188 14 7 C 14 3.132812 10.867188 0 7 0 C 3.132812 0 0 3.132812 0 7 C 0 10.867188 3.132812 14 7 14 "/>
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(94.901961%,31.37255%,33.725491%);fill-opacity:1;" d="M 7 13.5 C 10.589844 13.5 13.5 10.589844 13.5 7 C 13.5 3.410156 10.589844 0.5 7 0.5 C 3.410156 0.5 0.5 3.410156 0.5 7 C 0.5 10.589844 3.410156 13.5 7 13.5 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:#df4744;fill-opacity:1;" d="M 7 14 C 10.867188 14 14 10.867188 14 7 C 14 3.132812 10.867188 0 7 0 C 3.132812 0 0 3.132812 0 7 C 0 10.867188 3.132812 14 7 14 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:#fd5754;fill-opacity:1;" d="M 7 13.5 C 10.589844 13.5 13.5 10.589844 13.5 7 C 13.5 3.410156 10.589844 0.5 7 0.5 C 3.410156 0.5 0.5 3.410156 0.5 7 C 0.5 10.589844 3.410156 13.5 7 13.5 "/>
 </g>
 </svg>

@@ -17,8 +17,8 @@
 </g>
 </defs>
 <g id="surface1">
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,79.215688%,30.588236%);fill-opacity:1;" d="M 7 14 C 10.867188 14 14 10.867188 14 7 C 14 3.132812 10.867188 0 7 0 C 3.132812 0 0 3.132812 0 7 C 0 10.867188 3.132812 14 7 14 "/>
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,79.215688%,30.588236%);fill-opacity:1;" d="M 7 13.5 C 10.589844 13.5 13.5 10.589844 13.5 7 C 13.5 3.410156 10.589844 0.5 7 0.5 C 3.410156 0.5 0.5 3.410156 0.5 7 C 0.5 10.589844 3.410156 13.5 7 13.5 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:#27aa33;fill-opacity:1;" d="M 7 14 C 10.867188 14 14 10.867188 14 7 C 14 3.132812 10.867188 0 7 0 C 3.132812 0 0 3.132812 0 7 C 0 10.867188 3.132812 14 7 14 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:#34c848;fill-opacity:1;" d="M 7 13.5 C 10.589844 13.5 13.5 10.589844 13.5 7 C 13.5 3.410156 10.589844 0.5 7 0.5 C 3.410156 0.5 0.5 3.410156 0.5 7 C 0.5 10.589844 3.410156 13.5 7 13.5 "/>
 <use xlink:href="#surface5" mask="url(#mask0)"/>
 </g>
 </svg>

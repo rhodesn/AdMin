@@ -7,7 +7,6 @@ fi
 
 #SASSC_OPT=('-t' 'compressed')
 SASSC_OPT=('-t' 'compact')
-
 echo Generating the css...
 
 sassc "${SASSC_OPT[@]}" gtk-contained.scss gtk.css
