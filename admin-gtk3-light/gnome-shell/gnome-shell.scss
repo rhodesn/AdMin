@@ -53,3 +53,9 @@ stage {
 //box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
 //border-radius: 6px;
 //}
+
+
+#dashtodockContainer.shrink #dash .dash-item-container .overview-icon,
+#dashtodockContainer.dashtodock #dash .dash-item-container .overview-icon {
+    border-radius: 0 7px 7px 0;
+}
