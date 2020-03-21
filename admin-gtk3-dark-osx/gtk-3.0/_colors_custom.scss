@@ -1,5 +1,8 @@
 // override _colors.scss
 
+//@import '../.././admin-gtk3-light-slimmer-osx/gtk-3.0/_colors.scss';
 $text_color: #d6d7d9;
-$bg_color: #424345;
+$bg_color: #343537;
 $fg_color: #d6d7d9;
+$top_hilight: #858687;
+$selected_bg_color: darken(#0a7aff, 10%);
