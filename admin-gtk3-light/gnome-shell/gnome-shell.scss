@@ -3,23 +3,24 @@ stage {
     font-size: 9pt;
 }
 #panel {
+    $panel-color: rgba(0,0,0,0.5);
     font-weight: 500;
     height: 25px;
-    background-color: rgba(0,0,0,0.3);
-    //margin-top: 5px;
-    //margin-right: 5px;
-    //margin-left: 5px;
-    //border-radius: 3px;
-    .panel-button {
-        font-weight: 500;
-    }
+    background-color: $panel-color;
+    color: red;
+    // margin-top: 5px;
+    // margin-right: 5px;
+    // margin-left: 5px;
+    // margin-bottom: 5px;
+    // border-radius: 3px;
     .panel-corner {
-        -panel-corner-radius: 5px;
-        -panel-corner-background-color: rgba(0,0,0,0.3);
+        -panel-corner-radius: 0px;
+        -panel-corner-background-color: $panel-color;
         -panel-corner-border-color: transparent;
     }
 
     .panel-button {
+        font-weight: 500;
         .system-status-icon {
             icon-size: 16px;
         }
@@ -38,21 +39,6 @@ stage {
     height: 18px;
 }
 
-
-//.popup-menu-boxpointer,
-//.candidate-popup-boxpointer {
-//-arrow-border-radius: 6px;
-//-arrow-background-color: rgba(63, 62, 64, 0.98);
-//-arrow-border-width: 0;
-//-arrow-border-color: transparent;
-//-arrow-base: 0;
-//-arrow-rise: 0;
-//-arrow-box-shadow: none;
-//margin: 0.3em 0.8em;
-//background-color: transparent;
-//box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
-//border-radius: 6px;
-//}
 
 
 #dashtodockContainer.shrink #dash .dash-item-container .overview-icon,
