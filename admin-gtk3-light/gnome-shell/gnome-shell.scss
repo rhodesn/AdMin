@@ -5,7 +5,7 @@ stage {
 #panel {
     $panel-color: rgba(0,0,0,0.5);
     font-weight: 500;
-    height: 25px;
+    height: 23px;
     background-color: $panel-color;
     color: red;
     // margin-top: 5px;
@@ -22,7 +22,7 @@ stage {
     .panel-button {
         font-weight: 500;
         .system-status-icon {
-            icon-size: 16px;
+            icon-size: 15px;
         }
     }
     .power-status {
