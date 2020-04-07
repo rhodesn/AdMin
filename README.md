@@ -10,13 +10,17 @@ Tweaks include:
 
 
 ### Installation
-Clone the repo to `~/.themes`, link the sub-themes, and run `parse-sass.sh`
+Clone the repo, link the sub-themes, and run `parse-sass.sh`
 script to generate the `gtk.css` files.
 
 ```sh
-$ git clone https://github.com/nrhodes91/AdMin ~/.themes/AdMin
-$ for theme in ~/.themes/AdMin/admin-gtk*; do ln -sf $theme ~/.themes/; done
-$ find ~/.themes/AdMin -type f -name parse-sass.sh -execdir {} \;
+$ INSTALL_PATH=~/.themes
+$ git clone https://github.com/nrhodes91/AdMin "$INSTALL_PATH/AdMin"
+$ for theme in "$INSTALL_PATH"/AdMin/admin-gtk*; do ln -sf $theme "$INSTALL_PATH"/; done
+$ find "$INSTALL_PATH"/AdMin -type f -name parse-sass.sh -execdir {} \;
 ```
+
+**Note:** installing to system directories such as /usr/share/themes will
+require admin permissions so run with sudo.
 
 You need the `sassc` package installed to compile the css.
