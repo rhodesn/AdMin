@@ -1,0 +1,19 @@
+stage { font-family: "Ubuntu"; font-size: 9pt; }
+
+#panel { font-weight: 500; height: 25px; background-color: rgba(0, 0, 0, 0.5); color: red; }
+
+#panel .panel-corner { -panel-corner-radius: 0px; -panel-corner-background-color: rgba(0, 0, 0, 0.5); -panel-corner-border-color: transparent; }
+
+#panel .panel-button { font-weight: 500; }
+
+#panel .panel-button .system-status-icon { icon-size: 16px; }
+
+#panel .power-status { font-size: 12pt; }
+
+.calendar-day-base { font-size: 9pt; }
+
+.calendar-day-base.calendar-day-heading { font-size: 9pt; }
+
+.slider { height: 18px; }
+
+#dashtodockContainer.shrink #dash .dash-item-container .overview-icon, #dashtodockContainer.dashtodock #dash .dash-item-container .overview-icon { border-radius: 0 7px 7px 0; }
